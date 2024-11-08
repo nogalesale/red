@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de Ajedrez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            width: 600px;
+            background-color: #fff3b0;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header h2 {
+            margin: 0;
+            color: #333;
+        }
+
+        .header img {
+            width: 50px;
+            height: auto;
+        }
+
+        .content {
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .table-container {
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        th, td {
+            padding: 8px;
+            border: 1px solid #333;
+        }
+
+        th {
+            background-color: #ffe08d;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .signature-section {
+            margin-top: 30px;
+            border-top: 1px dashed #333;
+            padding-top: 10px;
+        }
+
+        .signature-section label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .signature-section input[type="text"] {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .signature-section .firma-telefono {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .firma-telefono input {
+            width: 48%;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .btn-submit:hover {
+            background-color: #45a049;
+        }
+        /* Aplica estilo al botón */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333; /* Color del texto */
+    background-color: #f9f9f9; /* Fondo del botón */
+    border: 2px solid #333; /* Borde del botón */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px; /* Borde redondeado del botón */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Efecto de sombreado en el borde */
+.btn::before, .btn::after {
+    content: "";
+    position: absolute;
+    background-color: #333;
+}
+
+/* Configuración de los recuadros superior e inferior */
+.btn::before {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.btn::after {
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 2px;
+}
+
+/* Estilo al pasar el ratón */
+.btn:hover {
+    background-color: #333;
+    color: #fff;
+    transition: 0.3s;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h2>TALLER DE AJEDREZ</h2>
+        
+    </div>
+    <div class="content">
+        <p>Señores padres de familia:</p>
+        <p>La casa del Joven, está iniciando un taller de ajedrez, con la finalidad de incentivar el desarrollo del razonamiento lógico y el deporte.</p>
+        <p>Las clases se realizarán en horario cruzado. <strong>Por las mañanas y tardes los días del siguiente cronograma:</strong></p>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>GRUPO</th>
+                    <th>NIVEL</th>
+                    <th>HORA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>G1_Jueves</td>
+                    <td>Básico</td>
+                    <td>09:30 - 11:00 am</td>
+                </tr>
+                <tr>
+                    <td>G2_Jueves</td>
+                    <td>Básico</td>
+                    <td>14:00 - 15:30 pm</td>
+                </tr>
+                <tr>
+                    <td>G3_Jueves</td>
+                    <td>Avanzado</td>
+                    <td>15:30 - 17:00 pm</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="footer">
+        <p>El costo de esta formación deportiva es de 30 Bs. (ciclo que dura 6 sesiones) que cubre un bono de transporte para el profesor, ya que es particular. La asistencia a este taller, es una gran oportunidad de aprendizaje y desarrollar el razonamiento.</p>
+        
+        
+        <p>Atte. Casa del Joven</p>
+    </div>
+    
+    <section class="comen">
+        <a href="qr.html" class="btn">PAGA EL CURSO POR QR</a>
+    </section>
+</div>
+
+</body>
+</html>
+

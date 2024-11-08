@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -7,36 +7,34 @@
 }
 
 body {
-    background-color: #1f1d1d;
     text-align: center;
     font-family: sans-serif;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+
 }
 
 
-/* Header fijo */
 .head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 70px;
-    background: transparent;
+    height: 63px;
+    background: #171717;
     position: fixed;
     width: 100%;
     z-index: 100;
 }
-
 .navbar {
     display: flex;
     margin-right: 10px;
+
 }
 
 .logo {
     margin-left: 30px;
-}
 
+}
 .logo a {
     text-decoration: none;
     color: #fff;
@@ -47,7 +45,7 @@ body {
 .navbar a {
     display: block;
     padding: 23px 20px;
-    color: #f2e9e9;
+    color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 20px;
@@ -55,21 +53,22 @@ body {
 
 .navbar a:hover {
     background: #3f3f3f;
-}
 
-/* Ajuste para el contenido principal debajo del header */
+}
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+
+}
+.header {
+    height: 60vh !important;
     background: url(img/casajoven.jpeg) no-repeat center;
     background-size: cover;
-    margin-top: 63px; /* Para que el contenido no quede oculto bajo el header fijo */
 }
 
 .title {
-    background-color:( purple);
+    background-color: rgb(93, 39, 93);
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 600;
@@ -78,14 +77,14 @@ body {
 }
 
 p {
-    background-color: black;
+    background-color:black;
     margin-bottom: 40px;
     font-size: 18px;
-    color: white;
+    color:white ;
     padding: 0 100px;
+
 }
 
-/* Botón principal */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -93,35 +92,33 @@ p {
     border: 2px solid #9c27b0;
     color: #fff;
     text-decoration: none;
-    background:purple;
-    transition: background 0.3s;
+    background: #9c27b0;
 }
 
 .btn:hover {
     background: none;
-}
 
+}
 .btn-home {
     display: flex;
-    
-}
 
-.btn-home a {
-    margin: 0 10px;
+}
+.btn-hom a{
+    margin: 0 10px; 
 }
 
 .content {
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
 }
 
-/* Sección de servicios */
 .sau {
     padding: 30px;
     background: #1f1d1d;
+
 }
 
 .box-container {
@@ -129,6 +126,7 @@ p {
     justify-content: center;
     flex-wrap: wrap;
     text-align: center;
+
 }
 
 .box-container .box {
@@ -137,7 +135,7 @@ p {
     background: #101010;
     text-align: center;
     border-radius: 1rem;
-    box-shadow: 0 .3rem 5rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 .3 5rem rgb(0, 0, 0, .5);
     margin: 2rem;
 }
 
@@ -151,23 +149,25 @@ p {
     background: #9c27b0;
     font-size: 2rem;
     margin: 1rem 0;
+
 }
 
 .box-container .box h3 {
     font-size: 20px;
     color: #9c27b0;
+
 }
 
 .box-container .box p {
     padding: 0 15px;
     font-size: 16px;
+
 }
 
 .about {
     background: #171717;
 }
 
-/* Fondo de la sección de precios */
 .price {
     background: url(img/logo3.jpeg) no-repeat center;
     background-attachment: fixed;
@@ -179,57 +179,17 @@ p {
     padding-top: 20px;
     background: #171717;
     padding-bottom: 0;
-}
 
-/* Media Queries */
-@media (max-width: 768px) {
+}
+@media (max-widht: 768px)  {
     .title {
         margin-bottom: 0;
         font-size: 40px;
     }
-
     .sau {
-        height: auto;
+        height: 120vh;
     }
-
     .navbar {
         display: none;
     }
-
-    .box-container {
-        flex-direction: column;
-    }
-
-    .btn {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    p {
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    .title {
-        font-size: 30px;
-        padding: 0 10px;
-    }
-
-    .box-container .box {
-        width: 90%;
-        margin: 1rem auto;
-    }
-
-    p {
-        font-size: 16px;
-        padding: 0 10px;
-    }
-}
-.camila{
-    background-color:#171717 ;
-    
-}
-.title{
-    background-color:purple;
 }

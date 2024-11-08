@@ -1,0 +1,62 @@
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Color de fondo suave */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Encabezado */
+h1 {
+    color: #ff6347; /* Rojo tomate */
+    font-size: 2.5em;
+    text-shadow: 2px 2px #ffa07a; /* Sombra ligera */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Imagen */
+img {
+    border: 5px solid #4682b4; /* Azul acero */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
+
+/* Efecto hover en la imagen */
+img:hover {
+    transform: scale(1.05); /* Agranda la imagen un poco al pasar el cursor */
+}
+
+/* Párrafo */
+p {
+    color: #4682b4; /* Azul acero */
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+    background-color: #ffebcd; /* Fondo color crema */
+    padding: 10px;
+    border: 2px dashed #ff6347; /* Borde rojo tomate */
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+/* Añadir algunos estilos para dispositivos pequeños */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    img {
+        width: 80%;
+        height: auto;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
